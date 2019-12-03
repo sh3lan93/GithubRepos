@@ -1,5 +1,4 @@
-
-plugins{
+plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("android.extensions")
@@ -30,6 +29,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:${Dependencies.APP_COMPACT}")
     implementation("androidx.core:core-ktx:${Dependencies.KTX}")
     implementation("androidx.constraintlayout:constraintlayout:${Dependencies.CONSTRAINT_LAYOUT}")
+    implementation("androidx.legacy:legacy-support-v4:${Dependencies.LEGACY_SUPPORT}")
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test.ext:junit:1.1.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
