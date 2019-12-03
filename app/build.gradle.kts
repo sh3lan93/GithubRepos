@@ -1,3 +1,5 @@
+import BuildConfiguration.BASE_URL
+
 plugins {
     id("com.android.application")
     kotlin("android")
@@ -19,6 +21,14 @@ android {
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+    }
+    flavorDimensions("type")
+    productFlavors {
+        create("staging"){
+            applicationIdSuffix = ".staging"
+            setDimension("type")
+            addBuildConfigField(com.android.builder.internal.ClassFieldImpl("String", "BASE_URL", BASE_URL))
         }
     }
 }
