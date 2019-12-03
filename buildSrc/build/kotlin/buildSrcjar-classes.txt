@@ -1,1 +1,1 @@
-/Users/mohamedshalan/workspace/GithubRepos/buildSrc/build/classes/kotlin/main/Dependencies.class:/Users/mohamedshalan/workspace/GithubRepos/buildSrc/build/classes/kotlin/main/Versioning.class
+/Users/mohamedshalan/workspace/GithubRepos/buildSrc/build/classes/kotlin/main/BuildConfiguration.class:/Users/mohamedshalan/workspace/GithubRepos/buildSrc/build/classes/kotlin/main/Dependencies.class:/Users/mohamedshalan/workspace/GithubRepos/buildSrc/build/classes/kotlin/main/Versioning.class
