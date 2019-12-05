@@ -10,7 +10,7 @@ plugins {
 android {
     compileSdkVersion(Versioning.COMPILE_SDK_VERSION)
     defaultConfig {
-        applicationId = "com.shalan.locator"
+        applicationId = "com.shalan.githubrepos"
         minSdkVersion(Versioning.MIN_SDK)
         targetSdkVersion(Versioning.COMPILE_SDK_VERSION)
         versionCode = Versioning.VERSION_CODE
