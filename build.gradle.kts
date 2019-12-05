@@ -9,6 +9,7 @@ buildscript {
     dependencies {
         classpath( "com.android.tools.build:gradle:3.5.2")
         classpath( "org.jetbrains.kotlin:kotlin-gradle-plugin:${Dependencies.KOTLIN_VERSION}")
+        classpath("com.google.gms:google-services:4.3.3")
     }
 }
 
