@@ -16,3 +16,5 @@
 .idea/
 
 app/google-services.json
+
+app/src/staging/google-services.json
