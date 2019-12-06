@@ -56,6 +56,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
     implementation("com.google.firebase:firebase-analytics:${Dependencies.FIREBASE_ANALYTICS}")
     implementation("com.android.support:customtabs:28.0.0")
+    implementation("com.google.android.material:material:1.0.0")
 }
 
 apply {
