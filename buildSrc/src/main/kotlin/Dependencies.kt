@@ -7,4 +7,5 @@ object Dependencies {
     val APP_COMPACT = "1.1.0"
     val KTX = "1.1.0"
     val LEGACY_SUPPORT = "1.0.0"
+    val FIREBASE_ANALYTICS = "17.2.1"
 }
