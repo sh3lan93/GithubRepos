@@ -1,4 +1,6 @@
 import BuildConfiguration.BASE_URL
+import java.util.Properties
+import java.io.FileInputStream
 
 plugins {
     id("com.android.application")
@@ -6,6 +8,11 @@ plugins {
     kotlin("android.extensions")
 
 }
+
+//load the secrets file
+val secretsPropertiesFile = rootProject.file("secrets.properties")
+val secretProperties = Properties()
+secretProperties.load(FileInputStream(secretsPropertiesFile))
 
 android {
     compileSdkVersion(Versioning.COMPILE_SDK_VERSION)
@@ -21,6 +28,10 @@ android {
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+        // for all build types add the client id
+        all {
+            addBuildConfigField(com.android.builder.internal.ClassFieldImpl("String", "CLIENT_ID", secretProperties.getProperty("CLIENT_ID")))
         }
     }
     flavorDimensions("type")
